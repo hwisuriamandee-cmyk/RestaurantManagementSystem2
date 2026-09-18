@@ -1,0 +1,20 @@
+﻿CREATE TABLE InventoryItems (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    ItemName NVARCHAR(100) NOT NULL,
+    Quantity INT NOT NULL,
+    Price DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE Customers (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    FullName NVARCHAR(100) NOT NULL,
+    Phone NVARCHAR(20) NOT NULL,
+    Email NVARCHAR(100) NULL
+);
+
+CREATE TABLE Employees (
+    Id INT IDENTITY(1,1) PRIMARY KEY,
+    FullName NVARCHAR(100) NOT NULL,
+    Position NVARCHAR(50) NOT NULL,
+    Salary DECIMAL(10,2) NOT NULL
+);
